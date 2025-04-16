@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Router basename="/TodoApp">
+    <Router>
       <Header />
       <Routes>
         <Route path="/" element={<TodoApp />} />
