@@ -5,11 +5,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/TodoApp">
       <Header />
       <Routes>
-        <Route path="/" exact  Component={TodoApp} />
-        <Route path="/about" Component={About} />
+        <Route path="/" element={<TodoApp />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   );
